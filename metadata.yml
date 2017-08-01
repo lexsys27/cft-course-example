@@ -1,17 +1,13 @@
-title: CF For Operators Second
+title: CF for DevOps engineers
 price: 21.5
-description: Learn how to efficiently manage Cloud Foundry users and resources,
-  ensure that your deployments are secure, and create your own buildpacks and service
-  brokers.
+description: Learn how to bootstrap BOSH and use it to deploy Cloud Foundry and
+  other distributed software. The advanced section also provides a more in-depth
+  overview of BOSH internals.
 labels:
-  for: operators
+  for: devops
   product: "Cloud Foundry"
 lessons:
   - 002_cloud_foundry_main_concepts
-  - 003_quick_start
-  - 004_cloud_foundry_org_and_space_management
-  - 005_cloud_foundry_user_management
-  - 006_quota_management_in_cloud_foundry
 iaas_provider: amazon
 instance_flavour: m4.large
 generators:
