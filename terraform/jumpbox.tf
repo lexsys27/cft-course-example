@@ -178,3 +178,7 @@ output "jumpbox_user" {
 output "ssh_port" {
   value = "${var.ssh_port}"
 }
+
+output "public_key" {
+  value = "${file("${var.platform_public_key_path}")}"
+}
