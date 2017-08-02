@@ -1,0 +1,16 @@
+---
+id: 002_install_cloud_foundry
+title: Install Cloud Foundry
+description: Follow the steps to install you own, full-fledged Cloud Foundry PaaS,
+  using BOSH.
+steps:
+- id: configure_aws_account
+  title: Configure AWS Account
+- id: install_spiff
+  title: Install spiff
+- id: prepare_deployment
+  title: Prepare deployment
+- id: deploy
+  title: Deploy
+- id: verify_deployment
+  title: Verify deployment

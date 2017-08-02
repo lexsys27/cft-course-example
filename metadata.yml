@@ -7,7 +7,7 @@ labels:
   for: devops
   product: "Cloud Foundry"
 lessons:
-  - 002_cloud_foundry_main_concepts
+  - 002_install_cloud_foundry
 iaas_provider: amazon
 instance_flavour: m4.large
 generators:
@@ -23,18 +23,6 @@ parameters:
     description: "AWS Region"
     type: dropdown
     values:
-      - ap-northeast-1
-      - ap-south-1
-      - ap-southeast-1
-      - eu-central-1
-      - eu-west-1
-      - sa-east-1
-      - us-east-1
-      - us-west-1
-      - cn-north-1
-      - ap-northeast-2
-      - ap-southeast-2
-      - us-east-2
       - us-west-2
   - name: some_json
     description: "Some JSON"
