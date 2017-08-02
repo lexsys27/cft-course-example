@@ -130,7 +130,7 @@ resource "aws_key_pair" "tango" {
 }
 
 resource "aws_instance" "training_jumpbox" {
-    ami = "ami-6e1a0117"
+    ami = "ami-9ee24ffe"
     instance_type = "m4.large"
     key_name = "${aws_key_pair.tango.key_name}"
     vpc_security_group_ids = ["${aws_security_group.training_sg.id}"]
