@@ -17,7 +17,7 @@ variable "uuid" {
 }
 
 variable "jumpbox_user" {
-    default = "vcap"
+    default = "ubuntu"
 }
 
 variable "ssh_port" {
