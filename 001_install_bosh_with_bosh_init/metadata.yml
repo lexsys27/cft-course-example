@@ -1,0 +1,19 @@
+---
+id: 001_install_bosh_with_bosh_init
+title: Install BOSH With BOSH Init
+description: Follow the steps to install BOSH with BOSH-init
+steps:
+- id: introduction
+  title: Introduction
+- id: install_bosh_init
+  title: Install BOSH init
+- id: install_the_bosh_cli
+  title: Install the BOSH CLI
+- id: install_the_aws_cli
+  title: Install the AWS CLI
+- id: configure_your_aws_account
+  title: Configure Your AWS Account
+- id: prepare_deployment_manifest
+  title: Prepare Deployment Manifest
+- id: deploy_bosh
+  title: Deploy BOSH

@@ -7,6 +7,7 @@ labels:
   for: devops
   product: "Cloud Foundry"
 lessons:
+  - 001_install_bosh_with_bosh_init
   - 002_install_cloud_foundry
 iaas_provider: amazon
 instance_flavour: m4.large
