@@ -4,6 +4,9 @@ variable "aws_region" {}
 variable "platform_public_key_path" {}
 variable "platform_private_key_path" {}
 
+variable "account_json" {}
+variable "gcp_project" {}
+
 variable "owner_tag" {
     description = "User email from platform"
 }

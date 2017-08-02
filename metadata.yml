@@ -20,11 +20,14 @@ parameters:
   - name: aws_secret_key
     description: "AWS Secret Key"
     type: text
+  - name: gcp_project
+    description: "Name of GCP project"
+    type: text
   - name: aws_region
     description: "AWS Region"
     type: dropdown
     values:
       - us-west-2
-  - name: some_json
+  - name: account_json
     description: "Some JSON"
     type: textarea
