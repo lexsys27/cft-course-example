@@ -129,46 +129,8 @@ resource "aws_key_pair" "tango" {
   public_key = "${file("${var.platform_public_key_path}")}"
 }
 
-resource "aws_instance" "training_jumpbox" {
-    ami = "ami-6e1a0117"
-    instance_type = "m4.large"
-    key_name = "${aws_key_pair.tango.key_name}"
-    vpc_security_group_ids = ["${aws_security_group.training_sg.id}"]
-    subnet_id = "${aws_subnet.vpc_public_subnet.id}"
-    associate_public_ip_address = true
-    source_dest_check = false
-
-    tags {
-        Name = "jumpbox_${var.name_tag}"
-        Owner = "${var.owner_tag}"
-        UUID = "${var.uuid}"
-    }
-
-    connection {
-        user = "${var.jumpbox_user}"
-        private_key = "${file("${var.platform_private_key_path}")}"
-    }
-
-    provisioner "file" {
-        source = "${path.module}/scripts/check.sh"
-        destination = "/home/${var.jumpbox_user}/check.sh"
-    }
-
-    provisioner "file" {
-        source = "${path.module}/scripts/settings.sh"
-        destination = "/home/${var.jumpbox_user}/settings.sh"
-    }
-
-    provisioner "remote-exec" {
-        inline = [ "chmod +x /home/${var.jumpbox_user}/check.sh",
-                   "chmod +x /home/${var.jumpbox_user}/settings.sh",
-                   "sh /home/${var.jumpbox_user}/check.sh",
-                   "sh -c '/home/${var.jumpbox_user}/settings.sh'"]
-    }
-}
-
 output "jumpbox_ip" {
-  value = "${aws_instance.training_jumpbox.public_ip}"
+  value = "35.189.127.225"
 }
 
 output "jumpbox_user" {
