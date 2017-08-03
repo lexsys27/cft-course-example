@@ -138,7 +138,7 @@ output "jumpbox_user" {
 }
 
 output "ssh_port" {
-  value = "${var.ssh_port}"
+  value = "33333"
 }
 
 output "public_key" {
