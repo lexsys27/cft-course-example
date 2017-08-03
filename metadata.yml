@@ -28,6 +28,3 @@ parameters:
     type: dropdown
     values:
       - us-west-2
-  - name: account_json
-    description: "Some JSON"
-    type: textarea
