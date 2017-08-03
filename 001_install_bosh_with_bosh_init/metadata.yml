@@ -3,6 +3,16 @@ id: 001_install_bosh_with_bosh_init
 title: Install BOSH With BOSH Init
 description: Follow the steps to install BOSH with BOSH-init
 steps:
+- id: 01_install_bosh_cli
+  title: Install BOSH cli
+- id: 02_install_dependencies
+  title: Install BOSH dependencies
+- id: 03_install_terraform
+  title: Install Terraform
+- id: 04_install_bbl
+  title: Install BOSH Bootloader
+- id: 05_install_gcloud
+  title: Install Google Cloud SDK
 - id: introduction
   title: Introduction
 - id: install_bosh_init
