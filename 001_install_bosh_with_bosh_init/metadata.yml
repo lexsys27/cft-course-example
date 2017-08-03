@@ -13,6 +13,14 @@ steps:
   title: Install BOSH Bootloader
 - id: 05_install_gcloud
   title: Install Google Cloud SDK
+- id: 06_gcloud_auth
+  title: Authorise in Google Cloud
+- id: 07_gcloud_service_account
+  title: Create Google Cloud service account
+- id: 08_create_director
+  title: Create BOSH Director
+- id: 09_upload_stemcell
+  title: Upload stemcell
 - id: introduction
   title: Introduction
 - id: install_bosh_init
