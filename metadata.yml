@@ -28,3 +28,6 @@ parameters:
     type: dropdown
     values:
       - us-west-2
+  - name: account_json
+    description: "Key File"
+    type: file
