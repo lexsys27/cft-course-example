@@ -30,7 +30,7 @@ resource "google_compute_instance" "jumpbox" {
 }
 
 output "jumpbox_ip" {
-  value = "${google_compute_instance.jumpbox.nat_ip}"
+  value = "8.8.8.8"
 }
 
 output "jumpbox_user" {
